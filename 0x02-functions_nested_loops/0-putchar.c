@@ -1,11 +1,11 @@
 #include "main.h"
 
 /**
- *  main - check the code for ALX school students.
+ * main - check the code for ALX school students.
  *
- *  program that prints Holberton, followed by a new line
+ * program that prints Holberton, followed by a new line
  *
- *  Return: always 0 (success)
+ * Return: always 0 (success)
  */
 
 int main(void)
