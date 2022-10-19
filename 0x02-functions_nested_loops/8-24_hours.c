@@ -23,7 +23,7 @@ void jack_bauer(void)
 			while (sec1 < 6)
 			{
 				
-				while (sec2 <=9)
+				while (sec2 <= 9)
 				{
 				
 					_putchar(hr1 + '0');
@@ -35,12 +35,16 @@ void jack_bauer(void)
 					sec2++;
 				}
 				sec2 = 0;
-				sec1++;	
+				sec1++;
+
 			}
 			sec1 = 0;
 			hr2++;
 
 	    	}
 		hr2 = 0;
-	}	hr1++;	
+		hr1++;
+
+	}
+		
 }	
