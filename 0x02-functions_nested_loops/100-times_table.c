@@ -1,4 +1,4 @@
-#include "holberton.h"
+#include "main.h"
 
 /**
  * * print_times_table - Print the n times table
@@ -26,19 +26,19 @@ void print_times_table(int n)
 		{
 		_putchar(32);
 		_putchar(32);
-		_putchar(op + 48);
+		_putchar(op + 48)
 		}
 		else if (op <= 99)
 		{
 		_putchar(32);
 		_putchar((op / 10) + 48);
-		_putchar((op % 10) + 48);
+		_putchar((op / 10) + 48);
 		}
 		else
 		{
 		_putchar(((op / 100) % 10) + 48);
 		_putchar(((op / 10) % 10) + 48);
-		_putchar((op % 10) + 48);
+		_putchar(((op % 10) + 48));
 		}
 	}
 	_putchar('\n');
