@@ -1,39 +1,42 @@
 #include <stdio.h>
-
-
 /**
- * main - prints Buzz each numbers of 3 and 5.
- * Return: Always 0.
+ * main - check the code for Holberton School students.
+ *
+ * Return: void.
  */
 
 int main(void)
 {
-    int n;
-    n = 1;
-    for (n = 2; n < 100; n++)
-    {
-        if ((n % 3 == 0)  && (n % 5 == 0))
-        {
-                printf("FizzBuzz");
-        }
-        else if ( n % 3 ==0)
-        {
-                printf("Fizz");
 
-        }
-        else if ( n % 5 == 0)
-        {
-                printf("Buzz");
-        }
-        else 
-        {
-                printf("%d", n);
-        }
+	int i = 1;
 
+	while (i <= 100)
+	{
+		if (i % 3 == 0 && i % 5 == 0)
+		{
+			printf("FizzBuzz");
+		}
+		else if (i % 3 == 0)
+		{
+			printf("Fizz");
+		}
+		else if (i % 5 == 0)
+		{
+			printf("Buzz");
+		}
+		else
+		{
+			printf("%i", i);
+		}
 
-    }
-    printf("\n");
-    return (0);
+		if (i != 100)
+		{
+			putchar(' ');
+		}
+
+		i++;
+	}
+	putchar('\n');
+	return (0);
+
 }
-
-
