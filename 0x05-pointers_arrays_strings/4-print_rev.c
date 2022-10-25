@@ -1,3 +1,5 @@
+#include <stdio.h>
+#include <string.h>
 #include "main.h"
 /**
  * print_rev - prints a string in reverse order
@@ -6,20 +8,16 @@
  *Return: void which means our answer is correct
  */
 
-void print_rev(char *s)
+void print_rev(char s[])
 {
+
+int length = strlen(s);
+
 int i;
 
-i = 0;
-while (s[i] != '\0')
+for (i = length -1; i >= 0; i--)
 {
-i++;
+    _putchar(s[i]);
 }
-
-for (i = i - 1 ; i >= 0; i--)
-{
-_putchar (s[i]);
-}
-
-_putchar ('\n');
+    _putchar('\n');
 }

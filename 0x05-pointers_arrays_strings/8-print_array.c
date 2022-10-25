@@ -1,30 +1,21 @@
-#include "main.h"
 #include <stdio.h>
+#include <string.h>
+#include "main.h"
 /**
- *print_array - prints n elements of an array of integers
- *@a: A pointer to an int that will be updated/ changed
- *@n: return value n
- *Return: void which ,means our answer is correct
+ *print_array - outputs array
+ * Elements of array separated by comma and space
+ * @a: collect integer
+ * @n: determines number of elements in array
  */
-
 void print_array(int *a, int n)
-
 {
 int i;
-
-i = 0;
-while (i < n)
+for (i = 0; i < n; i++)
 {
+if (i == 0)
 printf("%d", a[i]);
-
-if (i < n - 1)
-{
-printf(", ");
+else
+printf(", %d", a[i]);
 }
-
-i++;
-}
-
-printf("\n")
-;
+printf("\n");
 }
