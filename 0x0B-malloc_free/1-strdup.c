@@ -23,7 +23,7 @@ char *_strdup(char *str)
     if(dup ==NULL)
         return (NULL);
 
-    while ((dup[i] == str[i] != '\0'))
+    while ((dup[i] = str[i] != '\0'))
             i++;
     return (dup);        
 }
