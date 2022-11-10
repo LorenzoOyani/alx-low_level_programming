@@ -25,14 +25,14 @@ int main(void)
 			{
 				putchar(num + '0');
 
-																				} else
-																				{
+			} else
+			{
 
-																					putchar(c);
-																					c++;
-																				}
+				putchar(c);
+				c++;
+			}
 
-																			}
+		}
 
 		putchar('\n');	
 		return (0);

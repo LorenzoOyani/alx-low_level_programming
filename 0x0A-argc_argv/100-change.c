@@ -10,30 +10,37 @@
  *
  * Return: 0 (Success), 1 (Error)
  */
+
 int main(int argc, char *argv[])
 {
-    int num, result , j;
+    int n, coins = 0;
 
-    int coins [] = {25 ,10, 5, 2, 1};
-    
-    if (argc !=2)
+    if ( argc !=2)
     {
         printf("Error\n");
         return (1);
+
     }
 
-    num = atoi(argv[1]);
-    result = 0;
-
-    for ( j =0;  j< coins[j]; j++)
+    if(argv[1][0] == '-')
     {
-        if ( num >= coins[j])
-        {
-            result ++;
-            num -= coins[j];
-        }
+        printf("0\n");
+        return (0);
     }
 
-    printf("%d\n", result);
-    return (1);
+    n = atoi(argv[1]);
+
+    coins += n / 25;
+    n = n % 25;
+    coins += n / 10;
+    n = n % 10;
+    coins += n / 5;
+    n = n % 5;
+    coins += n / 2;
+    n = n % 2;
+    coins += n / 1;
+
+    printf("%d\n", coins);
+    return (0);
+
 }
