@@ -1,12 +1,14 @@
 #include "lists.h"
 
-
-
 /**
  * write a function that prints all the elements of a 
+ * 
  * Return: the number of nodes
+ * 
  * format: see examples
+ * 
  * main: check the code
+ * 
  * Return: Always return 0
 */
 
