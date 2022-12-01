@@ -24,7 +24,7 @@ size_t looped_listint_len(const listint_t *head)
 	slowP = head->next;
 	fastP = (head->next)->next;
 
-	while (fastP)
+	while (slowP)
 	{
 		if (slowP == fastP)
 		{
